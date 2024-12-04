@@ -1,0 +1,98 @@
+{
+    "vim.useCtrlKeys": true,
+    "editor.detectIndentation": false,
+    "vim.vimrc.enable": true,
+    "editor.lineNumbers": "relative",
+    "vim.leader": " ",
+    "git.openRepositoryInParentFolders": "never",
+    "redhat.telemetry.enabled": false,
+    "editor.showFoldingControls": "always",
+    "files.associations": {
+        "*.wsb": "xml",
+        "*.wsx": "xml",
+        "*.wixproj": "xml"
+    },
+    "xml.fileAssociations": [
+
+        {
+        "systemId": "http://www.w3.org/2001/XMLSchema.xsd",
+        "pattern": "**/*.wsb"
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-j>": true,
+        "<C-k>": true
+    },
+    "vim.normalModeKeyBindings": [
+
+
+        {
+            "before": ["<leader>", "y"],
+            "commands": [
+                "editor.action.clipboardCopyAction"
+            ]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": [
+                "editor.action.clipboardPasteAction"
+            ]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        },
+        {
+            "before": ["<leader>", "z", "z"],
+            "commands": [
+                "workbench.action.toggleZenMode"
+            ]
+        },
+        {
+            "before": ["<leader>", "m", "m"],
+            "commands": [
+                "editor.action.toggleMinimap"
+            ]
+        },
+        {
+            "before": ["<leader>", "o", "o"],
+            "commands": [
+                "workbench.action.reopenClosedEditor"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "y"],
+            "commands": [
+                "editor.action.clipboardCopyAction"
+            ]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": [
+                "editor.action.clipboardPasteAction"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": [ "<Esc>" ]
+        }
+    ],
+    "vim.foldfix": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "editor.minimap.enabled": false,
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "telemetry.telemetryLevel": "off",
+    "debug.console.wordWrap": false,
+    "[log]": {
+        "editor.wordWrap": "off"
+    },
+    "terminal.integrated.allowChords": false
+}
